@@ -55,6 +55,3 @@ def showSolution(solution):
         #print '\tNearest Neighbor: ', place.neighbor['name'],' + Direction: ', place.neighbor['direction'], '\n'
 
     print('Best distance: ', solution.distance())
-    #print('Overall improvement using greedy heuristics: ', round(((init - solution.distance()) / init), 4))
-
-

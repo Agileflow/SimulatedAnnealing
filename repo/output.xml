@@ -1,32 +1,32 @@
 <tour best-distance="441.119" default-distance="483.560" name="Lagos">
-	<place name="MaryLand">
-		<latitude>45.2</latitude>
-		<longitude>12.1</longitude>
-		<location>S</location>
-		<neighbor direction="W" name="Ketu" />
-	</place>
-	<place name="Ketu">
-		<latitude>32.3</latitude>
-		<longitude>12.1</longitude>
-		<location>W</location>
-		<neighbor direction="N" name="Ikorodu" />
-	</place>
-	<place name="Ikorodu">
-		<latitude>12.34</latitude>
-		<longitude>34.556</longitude>
-		<location>N</location>
+	<place name="Onipanu">
+		<latitude>213.3</latitude>
+		<longitude>12.3</longitude>
+		<location>E</location>
 		<neighbor direction="E" name="Ajegunle" />
 	</place>
 	<place name="Ajegunle">
 		<latitude>34.5</latitude>
 		<longitude>70.34</longitude>
 		<location>E</location>
-		<neighbor direction="E" name="Onipanu" />
+		<neighbor direction="N" name="Ikorodu" />
 	</place>
-	<place name="Onipanu">
-		<latitude>213.3</latitude>
-		<longitude>12.3</longitude>
-		<location>E</location>
+	<place name="Ikorodu">
+		<latitude>12.34</latitude>
+		<longitude>34.556</longitude>
+		<location>N</location>
+		<neighbor direction="W" name="Ketu" />
+	</place>
+	<place name="Ketu">
+		<latitude>32.3</latitude>
+		<longitude>12.1</longitude>
+		<location>W</location>
 		<neighbor direction="S" name="MaryLand" />
+	</place>
+	<place name="MaryLand">
+		<latitude>45.2</latitude>
+		<longitude>12.1</longitude>
+		<location>S</location>
+		<neighbor direction="E" name="Onipanu" />
 	</place>
 </tour>
