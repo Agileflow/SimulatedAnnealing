@@ -5,6 +5,7 @@ from time import sleep
 
 
 class Visualize:
+
     def __init__(self, solutions, title, xlabel, ylabel, grid=False, save=None):
 
         self.fig = plt.figure()
@@ -43,3 +44,13 @@ class Visualize:
         for i in range(0, len(x) - 1):
             plt.arrow(x[i], y[i], (x[i + 1] - x[i]), (y[i + 1] - y[i]), head_width=a_scale,
                       color='g', length_includes_head=True)
+
+
+class Plot:
+    def __init__(self, title, x, y, xlabel, ylabel, grid=False):
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.plot(x,y, 'b')
+        plt.show()
+

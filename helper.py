@@ -6,7 +6,7 @@ from random import randint, random
 import constants as cnst
 
 def euclidean_distance(x1,y1,x2,y2):
-    return round(sqrt(((x2-x1)**2)+((y2-y1)**2)))
+    return round(sqrt(((x2-x1)**2)+((y2-y1)**2)), 5)
 
 def compute_tour(solution):
     

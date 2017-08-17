@@ -1,10 +1,4 @@
-<tour best-distance="441.000" default-distance="483.000" name="Lagos">
-	<place name="Onipanu">
-		<latitude>213.3</latitude>
-		<longitude>12.3</longitude>
-		<location>E</location>
-		<neighbor direction="S" name="MaryLand" />
-	</place>
+<tour best-distance="441.119" default-distance="483.560" name="Lagos">
 	<place name="MaryLand">
 		<latitude>45.2</latitude>
 		<longitude>12.1</longitude>
@@ -28,5 +22,11 @@
 		<longitude>70.34</longitude>
 		<location>E</location>
 		<neighbor direction="E" name="Onipanu" />
+	</place>
+	<place name="Onipanu">
+		<latitude>213.3</latitude>
+		<longitude>12.3</longitude>
+		<location>E</location>
+		<neighbor direction="S" name="MaryLand" />
 	</place>
 </tour>

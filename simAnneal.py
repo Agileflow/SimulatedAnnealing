@@ -12,9 +12,10 @@ def simAnneal(src, name):
     solutions = list()
     # creates a default solution from the source file    
     current_solution = Solution(xml.getData())
+    current_solution.temp = START_TEMPERATURE
     solutions.append(current_solution)
     # Start temperature 
-    current_temperature = START_TEMPERATURE
+    current_temperature = float(START_TEMPERATURE)
     
     while current_temperature > 1:
 
@@ -32,6 +33,8 @@ def simAnneal(src, name):
             current_solution = accept_solution(current_solution,
                                                temp_solution,
                                                current_temperature)
+
+            current_solution.temp = float(current_temperature)
             solutions.append(current_solution)
         # reduces the temperature with an Alpha value in constants.py
         current_temperature = reduce_temperature(current_temperature)

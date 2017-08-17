@@ -7,6 +7,7 @@ class Solution():
     def __init__(self, places = []):
         self.places = places
         self.dist = 0.0
+        self.temp = 0.0
    
     def distance(self):
         self.dist = compute_tour(self.places)
@@ -17,6 +18,9 @@ class Solution():
 
     def fitness(self):
         return self.dist
+
+    def temperature(self):
+        return self.temp
 
     def dataset(self):
         x = list()
