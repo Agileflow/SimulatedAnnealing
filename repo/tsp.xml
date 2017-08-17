@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tour>
+	<place name="Ikorodu">
+		<latitude>12.34</latitude>
+		<longitude>34.556</longitude>
+		<location>N</location>
+		<neighbor name="" direction=""/>
+	</place>
+	<place name="Ajegunle">
+		<latitude>34.5</latitude>
+		<longitude>70.34</longitude>
+		<location>E</location>
+		<neighbor name="" direction=""/>
+	</place>
+	<place name="Ketu">
+		<latitude>32.3</latitude>
+		<longitude>12.1</longitude>
+		<location>W</location>
+		<neighbor name="" direction=""/>
+	</place>
+	<place name="MaryLand">
+		<latitude>45.2</latitude>
+		<longitude>12.1</longitude>
+		<location>S</location>
+		<neighbor name="" direction=""/>
+	</place>
+	<place name="Onipanu">
+		<latitude>213.3</latitude>
+		<longitude>12.3</longitude>
+		<location>E</location>
+		<neighbor name="" direction=""/>
+	</place>
+</tour>
