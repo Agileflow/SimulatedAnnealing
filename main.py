@@ -15,7 +15,11 @@ if __name__ == '__main__':
     fitness = [solution.fitness() for solution in configurations]
     temps = [solution.temperature() for solution in configurations]
     iterations = [i for i in range(len(fitness))]
+    cities = len(configurations[0].places)
+
 
     #Visualize(configurations,"Travelling Salesman Problem Solution Using Simulated Annealing",'Latitude','Longitude',True)
-    Plot('Temperature to Iteration',iterations,temps,'Temperature','Fitness')
-    Plot('Fitness to Iteration',iterations,fitness,'Iterations','Fitness')
+    Plot('Temperature to '+ str(len(iterations)) +' iterations of ' + str(cities) + ' cities',iterations,temps,'Iteration','Temperature')
+    Plot('Fitness to '+ str(len(iterations)) +' iterations of ' + str(cities) + ' cities',iterations,fitness,'Iteration','Fitness')
+    Visualize('Initial tour of ' + str(cities) + ' cities',[place.latitude for place in configurations[0].places],[place.longitude for place in configurations[0].places],'Latitude','Longitude',True)
+    Visualize('Optimum tour after '+ str(len(iterations)) +' iterations of ' + str(cities) + ' cities',[place.latitude for place in configurations[-1].places],[place.longitude for place in configurations[-1].places],'Latitude','Longitude', True)

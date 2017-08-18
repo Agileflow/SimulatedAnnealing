@@ -1,7 +1,7 @@
     #!/usr/bin/env python
 
 
-START_TEMPERATURE = 500
+START_TEMPERATURE = 2500
 ALPHA = 0.998
 NUM_ITERATIONS = 10
 
